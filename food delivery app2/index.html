@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Food Delivery App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  
+  <h5>📞 +91 6379282903 📧 j.deva4523@gmail.com</h5>
+  
+  <header>
+    <h1>🍴 foody</h1>
+    <img src="images/logo.png.png"id="logo" />
+  </header>
+
+  <main>
+    <section id="group-order">
+      <h2>Group Order</h2>
+    
+      </button><input type="text" id="member-name" placeholder="Enter member name" />
+      <button onclick="addMember()">Add Member</button>
+
+      <input type="text" id="search-bar" placeholder="Search for food..." />
+
+      
+      <ul id="members-list"></ul>
+      <button onclick="splitBill()">Split Bill</button>
+      <div id="split-results"></div>
+    </section>
+    
+    <section id="menu">
+      <h2>Menu</h2>
+      <div id="menu-list"></div>
+    </section>
+
+    <section id="cart">
+      <h2>Your Cart</h2>
+      <ul id="cart-items"></ul>
+      <p id="total">Total:₹0 </p>
+      <button onclick="checkout()">Checkout</button>
+    </section><button onclick="resetPayments()">Reset Payments</button>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
